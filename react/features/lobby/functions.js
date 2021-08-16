@@ -10,6 +10,16 @@ export function getLobbyState(state: any) {
     return state['features/lobby'];
 }
 
+/**
+ * Selector to return lobby visibility.
+ *
+ * @param {any} state - State object.
+ * @returns {any}
+ */
+export function getIsLobbyVisible(state: any) {
+    return getLobbyState(state).lobbyVisible;
+}
+
 
 /**
  * Selector to return array with knocking participant ids.
